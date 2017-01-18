@@ -1,0 +1,26 @@
+body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
+
+.page{margin:0;padding:0;width:100%;height:100vh;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;}
+.page header{margin:0;padding:10px;background-color:#272731;text-align:center;}
+.page header .btn-back{float:left;font-size:33px;color:#fff;background-color:#fab949;padding:5px;width:45px;height:45px;display:block;border-radius:50%;}
+
+
+#home{background-image:url(../img/back.png);background-position:50% 0;background-size: auto 100%;position:relative;}/*272731*/
+#home section img{width:100%;}
+#home footer{position:absolute;bottom:0;width:100%;box-sizing:border-box;}
+#home footer input{margin:0;padding:15px 0;font-size:1em;width:100%;border:none;text-align:center;}
+#home footer a{margin:0;padding:15px;display:block;text-align:center;font-size:1em;text-decoration:none;color:#fff;}
+#home footer a#loginSend{background-color:#fab949;}
+#home footer a#registerOpen{background-color:#272731;}
+
+#profile #profile-image{text-align:center;}
+#profile #profile-image img{margin:15px;}
+#profile #profile-welcome{text-align:center;font-size:1.1em;}
+#profile a{margin:0;padding:15px;display:block;text-align:center;text-decoration:none;margin:5px 0;background-color:#fab949;color:#272731;}
+
+#tickets .actions a{margin:0;padding:15px;font-size:1em;display:block;text-decoration:none;text-align:center;}
+#tickets section .header{margin:0;padding:0;}
+#tickets section .header h3{margin:0;padding:15px;text-align:center;background-color:#fab949;color:#272731;}
+#tickets section .logo img{margin:0;padding:0;width:100%;}
+#ticket-take{background-color:#fab949;color:#272731;font-weight:bold;}
+#ticket-back, #ticket-next{background-color:#272731;color:#fff;border-right:solid 1px #fff;}
