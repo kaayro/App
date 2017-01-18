@@ -6,10 +6,15 @@ var app = {
 		$('a#goTickets').click(app.showTickets);
 		$('a#ticket-next').click(app.nextTicket);
 		$('a#ticket-back').click(app.backTicket);
+		$('#home').show();
 	},
 	link:function(){
 		var id = $(this).attr('href');
-		if(id == '#') return false;
+		if(id != '#'){
+			$('.page').hide();
+			$(id).show();
+		}
+		return false;
 	},
 	takeTicket:function(){
 		alert('función aún no disponible');

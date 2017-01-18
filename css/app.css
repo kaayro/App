@@ -1,6 +1,6 @@
 body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 
-.page{margin:0;padding:0;width:100%;height:100vh;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;}
+.page{margin:0;padding:0;width:100%;height:100vh;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;display:none;}
 .page header{margin:0;padding:10px;background-color:#272731;text-align:center;}
 .page header .btn-back{float:left;font-size:33px;color:#fff;background-color:#fab949;padding:5px;width:45px;height:45px;display:block;border-radius:50%;}
 
