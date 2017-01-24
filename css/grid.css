@@ -4,6 +4,8 @@
   Author - Carlos Celma to iGitWeb
   Site - http://web.igitsoft.com/
 */
+
+/* Columns Generator */
 .row-lf [class*='col-']{
     float:left;
     width:100%;
@@ -67,6 +69,11 @@
 .row-rg .offset-xs-3{margin-right:25%;}
 .row-rg .offset-xs-2{margin-right:16.66%;}
 .row-rg .offset-xs-1{margin-right:8.33%;}
+/*visibility blocks*/
+.hidden-xs{display:none;}
+.hidden-sm{display:block;}
+.visible-xs{display:block;}
+.visible-sm{display:none;}
 
 @media handheld, only screen and (min-width: 768px) {
 
@@ -123,4 +130,10 @@
     .row-rg .offset-sm-3{margin-right:25%;}
     .row-rg .offset-sm-2{margin-right:16.66%;}
     .row-rg .offset-sm-1{margin-right:8.33%;}
+	/*visibility blocks*/
+	.hidden-xs{display:block;}
+	.hidden-sm{display:none;}
+	.visible-xs{display:none;}
+	.visible-sm{display:block;}
+	
 }

@@ -13,6 +13,9 @@ body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 #home footer a#loginSend{background-color:#fab949;}
 #home footer a#registerOpen{background-color:#272731;}
 
+#register input,#register select{padding:15px 0;font-size:1em;border:none;background-color:#fff; border-bottom:solid 1px #000;}
+#register button{padding:15px 0;font-size:1em;border:none;background-color:#fab949;color:#272731;margin-top:10px;}
+
 #profile #profile-image{text-align:center;}
 #profile #profile-image img{margin:15px;}
 #profile #profile-welcome{text-align:center;font-size:1.1em;}
@@ -24,3 +27,11 @@ body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 #tickets section .logo img{margin:0;padding:0;width:100%;}
 #ticket-take{background-color:#fab949;color:#272731;font-weight:bold;}
 #ticket-back, #ticket-next{background-color:#272731;color:#fff;border-right:solid 1px #fff;}
+
+#search .head{margin:0;padding:0;background-color:#272731;}
+#search .head p{margin:0;color:#fab949;padding:50px 20px;text-align:center;}
+#search .content{margin:20px 0;}
+#search .content .img{margin:0 10px;}
+#search .content img{width:100%;}
+#search .content h4{text-align:center;padding-top:30px;}
+#search .content p{text-align:center;}

@@ -67,7 +67,7 @@ $(app.init);
 
 var tickets = [
 	{id: '1',promo: 'Clase Gratis',img: 'img/promo01.JPG'},
-	{id: '2',promo: '-20% en Mojito',img: 'img/promo02.jpg'},
+	{id: '2',promo: '-20% en Mojito',img: 'img/promo02.png'},
 	{id: '3',promo: '2 x 1 en Tequila',img: 'img/promo03.png'},
 	{id: '4',promo: '-10% en Ascenso a Media Montaña',img: 'img/promo04.png'},
 	{id: '5',promo: '1 Café Gratis',img: 'img/promo05.jpg'}
