@@ -46,16 +46,16 @@
 		<section>
 			<div class="row-lf">
 				<div class="col-sm-12" id="profile-image">
-					<img src="img/profile.png">
+					<img src="../brave-girls-eunyoung.jpg">
 				</div>
 				<div class="col-sm-12" id="profile-welcome">
-					<p>Hola <span id="prifile-name">Francesc</span>...</p>
+					<p>Hola <span id="prifile-name">Judith</span>...</p>
 					<p>¿Qué vamos a hacer hoy?</p>
 				</div>
 			</div>
 			<div class="row-lf">
 				<div class="col-sm-8 offset-sm-2">
-					<a href="#tickets" id="goTickets">Tourin Tickets</a>
+					<a href="#tickets" id="goTickets">Usar Tourin Tickets</a>
 				</div>
 				<div class="col-sm-8 offset-sm-2">
 					<a href="#search">Quiero Conocer</a>
@@ -67,27 +67,45 @@
 		<header>
 			<a href="#profile" class="btn-back"><i class="fa fa-arrow-left"></i></a>
 			<img src="img/isoWeb.png" class="iso">
+			<a href="#tickets-options" class="btn-opt"><i class="fa fa-sliders"></i></a>
 		</header>
 		<section>
 			<div class="row-lf">
 				<div class="col-sm-8 offset-sm-2">
-					<div class="header"><h3>Promoción</h3></div>
 					<div class="logo">
 						<img src="img/asere.JPG">
+						<div class="row-lf">
+							<div class="col-xs-4 category">
+								<i class="fa fa-bicycle"></i><br>
+								<span>Actividades y Entretenimiento</span>
+							</div>
+							<div class="col-xs-8 company">
+								<h5>Empresa</h5>
+								<h6>Dirección</h6>
+							</div>
+						</div>
+					</div>
+					<div class="description">
+						<p></p>
 					</div>
 				</div>
 			</div>
-			<div class="row-lf actions">
-				<div class="col-sm-8 offset-sm-2">
-					<a id="ticket-take" href="#">Tomar Ticket</a>
+			<footer>
+				<div class="row-lf actions">
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a href="#" id="ticket-back"><i class="fa fa-arrow-left"></i></a>
+					</div>
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a id="ticket-take" href="#"><i class="fa fa-qrcode"></i></a>
+					</div>
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a id="ticket-location" href="#"><i class="fa fa-map-marker"></i></a>
+					</div>
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a href="#" id="ticket-next"><i class="fa fa-arrow-right"></i></a>
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-8 offset-sm-2">
-					<a href="#" id="ticket-back">Atrás</a>
-				</div>
-				<div class="col-xs-6 col-sm-8 offset-sm-2">
-					<a href="#" id="ticket-next">Siguiente</a>
-				</div>
-			</div>
+			</footer>
 		</section>
 	</div>
 	<div class="page" id="search">
@@ -100,49 +118,97 @@
 				<p>Conoce la ciudad de una forma diferente</p>
 			</div>
 			<div class="content">
-				<div class="row-lf">
-					<div class="col-sm-8 offset-sm-2">
-						<div class="row-lf">
-							<div class="col-sm-4  col-xs-6">
-								<div class="img">
-									<img src="img/recorridoFoto.png">
+				<div class="row-lef">
+					<div class="col-sm-8 offset-sm-2 tour-opt" data-role="2">
+						<div class="row">
+								<div class="opc">
+									<div class="img"><i class="fa fa-camera"></i></div>
+									<h4>Postales de la Ciudad</h4>
 								</div>
-							</div>
-							<div class="col-sm-8  col-xs-6">
-								<h4>Postales de la Ciudad</h4>
-								<p class="hidden-xs">Conoce la ciudad capturando recuerdos a través de tu cámara y recorriendo los mejores lugares para tomar fotografías.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row-rg">
-					<div class="col-sm-8 offset-sm-2">
-						<div class="row-lf">
-							<div class="col-sm-4  col-xs-6">
-								<div class="img">
-									<img src="img/recorridoGastro.png">
+								<div class="opc">
+									<div class="img"><i class="fa fa-spoon"></i></div>
+									<h4>Sabores de la Ciudad</h4>
 								</div>
-							</div>
-							<div class="col-sm-8  col-xs-6">
-								<h4>Sabores de la Ciudad</h4>
-								<p class="hidden-xs">Conoce otro lado de la ciudad saboreando su gastronomía y comiendo los mejores platillos que ésta te puede ofrecer.</p>
-							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row-lf">
-					<div class="col-sm-8 offset-sm-2">
-						<div class="row-lf">
-							<div class="col-sm-4  col-xs-6">
-								<div class="img">
-									<img src="img/recorridoCompras.png">
+					<div class="col-sm-8 offset-sm-2 tour-opt" data-role="3">
+						<div class="row">
+								<div class="opc">
+									<div class="img"><i class="fa fa-shopping-bag"></i></div>
+									<h4>Recuerdos de la Ciudad</h4>
 								</div>
-							</div>
-							<div class="col-sm-8  col-xs-6">
-								<h4>Recuerdos de la Ciudad</h4>
-								<p class="hidden-xs">Encuentra de forma más fácil, rápida y divertida los recuerdos que podrás llevarle a tus amigos, familiares y amigos.</p>
-							</div>
+								<div class="opc">
+									<div class="img"><i class="fa fa-asterisk"></i></div>
+									<h4>Todos</h4>
+								</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="page" id="touriners-profiles">
+		<header>
+			<a href="#search" class="btn-back"><i class="fa fa-arrow-left"></i></a>
+			<img src="img/isoWeb.png" class="iso">
+		</header>
+		<section>
+			<div class="row-lf">
+				<div class="col-sm-8 offset-sm-2">
+					<div class="logo">
+						<img src="img/touriner_profile.jpeg">
+					</div>
+					<div class="row-lf">
+						<div class="col-xs-4 category">
+							<i class="fa fa-camera"></i><br>
+							<span>Postales de la Ciudad</span>
+						</div>
+						<div class="col-xs-8 company">
+							<h5>Carlos Celma</h5>
+							<h6>Lic. Ciencias de la Computación</h6>
+						</div>
+					</div>
+					<div class="description">
+						<p>En este recorrido disfrutaremos de 2 horas visitando 4 de los monumentos más icónicos de la ciudad de Puebla y contemplando la arquitectura y fachadas del siglo XVII a nuestro paso.</p>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="row-lf actions">
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a href="#" id="touriner-back"><i class="fa fa-arrow-left"></i></a>
+					</div>
+					<div class="col-xs-6">
+						<a id="touriner-take" href="#"><i class="fa fa-check"></i> Elegir</a>
+					</div>
+					<div class="col-xs-3 col-sm-8 offset-sm-2">
+						<a href="#" id="touriner-next"><i class="fa fa-arrow-right"></i></a>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</div>
+	<div class="page" id="tickets-options">
+		<header>
+			<a href="#tickets" class="btn-back"><i class="fa fa-arrow-left"></i></a>
+			<img src="img/isoWeb.png" class="iso">
+		</header>
+		<section>
+			<div class="row-lf">
+				<div class="col-sm-8 offset-sm-2">
+					<div class="input-group active">
+						<button><i class="fa fa-bicycle"></i></button>
+						<div class="desc">Actividades y Entretenimiento</div>
+					</div>
+					<div class="input-group">
+						<button class=""><i class="fa fa-bed"></i></button>
+						<div class="desc">Hoteles y Restaurantes</div>
+					</div>
+					<div class="input-group">
+						<button class=""><i class="fa fa-shopping-basket"></i></button>
+						<div class="desc">Artesanías y Tiendas</div>
 					</div>
 				</div>
 			</div>
@@ -151,5 +217,6 @@
 	
 	<script src="js/zepto.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/app.tickets.options.js"></script>
 </body>
 </html>
