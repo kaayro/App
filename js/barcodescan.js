@@ -1,6 +1,6 @@
 var qrscanner = {
-	alert(1);
 	scan: function(){
+		alert(1);
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 			  alert("We got a barcode\n" +
