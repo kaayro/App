@@ -2,7 +2,7 @@ var app = {
 	tickets: null,
 	init:function(){
 		$('a').click(app.link);
-		$('a#ticket-take').click(app.takeTicket);
+		$('a#ticket-take').click(qrscanner.scan);
 		$('a#goTickets').click(app.showTickets);
 		$('a#ticket-next').click(app.nextTicket);
 		$('a#ticket-back').click(app.backTicket);
@@ -12,7 +12,7 @@ var app = {
 		$('div.tour-opt').click(app.selectTour);
 		
 		//select a ticket
-		$(document).on('click','#ticket-take',qrscanner.scan);
+		//$(document).on('click','#ticket-take',qrscanner.scan);
 	},
 	link:function(e){
 		e.preventDefault();

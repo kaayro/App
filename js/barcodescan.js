@@ -1,4 +1,5 @@
 var qrscanner = {
+	alert(1);
 	scan: function(){
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
@@ -9,6 +10,13 @@ var qrscanner = {
 			}, 
 			function (error) {
 			  alert("Scanning failed: " + error);
+			},
+			{
+			  "preferFrontCamera" : true,
+			  "showFlipCameraButton" : true,
+			  "prompt" : "Place a barcode inside the scan area",
+			  "formats" : "QR_CODE,PDF_417", 
+			  "orientation" : "landscape"
 			}
 		);
 	}
