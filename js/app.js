@@ -10,6 +10,9 @@ var app = {
 		
 		//select a tour
 		$('div.tour-opt').click(app.selectTour);
+		
+		//select a ticket
+		$(document).on('click','#ticket-take',qrscanner.scan);
 	},
 	link:function(e){
 		e.preventDefault();
