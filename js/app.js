@@ -1,6 +1,6 @@
 var app = {
 	tickets: null,
-	ready: function(){
+	ready:function(){
 		document.addEventListener('deviceready',app.ready,false);
 	},
 	init:function(){
