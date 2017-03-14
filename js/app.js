@@ -1,7 +1,7 @@
 var app = {
 	tickets: null,
 	ready:function(){
-		document.addEventListener('deviceready',app.ready,false);
+		document.addEventListener('deviceready',app.init,false);
 	},
 	init:function(){
 		$('a').click(app.link);
