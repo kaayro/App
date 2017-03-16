@@ -5,7 +5,7 @@ var ticketsopts = {
 	map: null,
 	marker: null,
 	drawMap: function(){
-		
+		alert();
 		if(ticketsopts.marker != null)
 			ticketsopts.marker.setMap(null);
 		loc = $('#ticket-location').attr('data');
