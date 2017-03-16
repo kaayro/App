@@ -38,6 +38,9 @@ body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 #ticket-location{background-color:#fab949;color:#272731;font-weight:bold;}
 #ticket-back, #ticket-next{background-color:#272731;color:#fff;}
 
+#tickets-maps{display:flex;flex-direction:column;}
+#tickets-maps #ticketMap{flex:1;}
+
 #tickets-options{background-color:#272731;color:#fff;}
 #tickets-options section .input-group{display: -webkit-flex;display: flex;margin:10px;background-color:#fff;border-radius:5px;}
 #tickets-options section .input-group button{margin:0;padding:15px;font-size:20px;color:#a0a0a0;background-color:#f3f3f3;border:none;border-radius:5px 0 0 5px;text-align:center;width:70px;}

@@ -9,6 +9,7 @@ var app = {
 		$('a#goTickets').click(app.showTickets);
 		$('a#ticket-next').click(app.nextTicket);
 		$('a#ticket-back').click(app.backTicket);
+		$('a#ticket-location').click(ticketsopts.drawMap);
 		$('#home').show();
 		
 		//select a tour

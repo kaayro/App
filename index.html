@@ -108,6 +108,37 @@
 			</footer>
 		</section>
 	</div>
+	<div class="page" id="tickets-maps">
+		<header>
+			<a href="#tickets" class="btn-back"><i class="fa fa-arrow-left"></i></a>
+			<img src="img/isoWeb.png" class="iso">
+		</header>
+		<section id="ticketMap"></section>
+	</div>
+	<div class="page" id="tickets-options">
+		<header>
+			<a href="#tickets" class="btn-back"><i class="fa fa-arrow-left"></i></a>
+			<img src="img/isoWeb.png" class="iso">
+		</header>
+		<section>
+			<div class="row-lf">
+				<div class="col-sm-8 offset-sm-2">
+					<div class="input-group active">
+						<button><i class="fa fa-bicycle"></i></button>
+						<div class="desc">Actividades y Entretenimiento</div>
+					</div>
+					<div class="input-group">
+						<button class=""><i class="fa fa-bed"></i></button>
+						<div class="desc">Hoteles y Restaurantes</div>
+					</div>
+					<div class="input-group">
+						<button class=""><i class="fa fa-shopping-basket"></i></button>
+						<div class="desc">Artesanías y Tiendas</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 	<div class="page" id="search">
 		<header>
 			<a href="#profile" class="btn-back"><i class="fa fa-arrow-left"></i></a>
@@ -190,32 +221,9 @@
 			</footer>
 		</section>
 	</div>
-	<div class="page" id="tickets-options">
-		<header>
-			<a href="#tickets" class="btn-back"><i class="fa fa-arrow-left"></i></a>
-			<img src="img/isoWeb.png" class="iso">
-		</header>
-		<section>
-			<div class="row-lf">
-				<div class="col-sm-8 offset-sm-2">
-					<div class="input-group active">
-						<button><i class="fa fa-bicycle"></i></button>
-						<div class="desc">Actividades y Entretenimiento</div>
-					</div>
-					<div class="input-group">
-						<button class=""><i class="fa fa-bed"></i></button>
-						<div class="desc">Hoteles y Restaurantes</div>
-					</div>
-					<div class="input-group">
-						<button class=""><i class="fa fa-shopping-basket"></i></button>
-						<div class="desc">Artesanías y Tiendas</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
 	
 	<script src="cordova.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0phGDjBLZU7dv-4eekqgAe1c0FLkMMk	&callback=ticketsopts.drawmap"></script>
 	<script src="js/zepto.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/app.tickets.options.js"></script>
