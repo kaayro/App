@@ -3,26 +3,38 @@ var ticketsopts = {
 		//alert();
 	},
 	map: null,
+	marker: null,
 	drawMap: function(){
 		
-		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+		if(ticketsopts.marker != null)
+			ticketsopts.marker.setMap(null);
+		loc = $('#ticket-location').attr('data');
+		loc = loc.split(',');
+		var myLatlng = new google.maps.LatLng(loc[0],loc[1]);
 		if(ticketsopts.map == null){
+			var noPoi = [{
+				featureType: "poi",
+				stylers: [{ visibility: "off" }]   
+			}];
 			var mapOptions = {
-				zoom: 4,
-		  		center: myLatlng
+				zoom: 15,
+		  		center: myLatlng,
+				disableDefaultUI: true,
+				zoomControl: true,
+				styles: noPoi
 			}
 			ticketsopts.map = new google.maps.Map(document.getElementById("ticketMap"), mapOptions);
 		}else{
 			ticketsopts.map.setCenter(myLatlng);
 		}
 
-		var marker = new google.maps.Marker({
+		ticketsopts.marker = new google.maps.Marker({
 			position: myLatlng,
 			title:"Hello World!"
 		});
 
 		// To add the marker to the map, call setMap();
-		marker.setMap(map);
+		ticketsopts.marker.setMap(ticketsopts.map);
 		
 		// Ir a la página de mapas
 		$('.page').hide();

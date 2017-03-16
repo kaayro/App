@@ -27,11 +27,12 @@ body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 #tickets section .header h3{margin:0;padding:15px;text-align:center;background-color:#fab949;color:#272731;}
 #tickets section .logo img{margin:0;padding:0;width:100%;}
 #tickets .category{background-color:#272731;color:#fff;text-align:center;padding:15px 0 10px 0;}
+#tickets section .info{background-color:#f3f3f3;}
 #tickets .category i{color:#fff;font-size:30px;}
 #tickets .category span{font-size:10px;}
 #tickets .company h5{margin:30px 0 0 0;text-align:center;}
 #tickets .company h6{margin:0;text-align:center;}
-#tickets .description{margin:0;padding:10px 10px 60px 10px;background-color:#f3f3f3;color:#272731;}
+#tickets .description{margin:0;padding:10px 10px 60px 10px;background-color:#fff;color:#272731;}
 #tickets .description p{padding:0 10px;font-size:.8em;text-align:justify;}
 #tickets footer{margin:0;padding:0;position:fixed;bottom:0;left:0;width:100%;}
 #ticket-take{background-color:#fab949;color:#272731;font-weight:bold;}
@@ -59,12 +60,13 @@ body,html{margin:0;padding:0;font-family:Verdana;overflow:hidden;}
 #touriners-profiles .actions a{margin:0;padding:15px;font-size:1em;display:block;text-decoration:none;text-align:center;}
 #touriners-profiles section .logo{background-color:#272731;padding:20px 0;text-align:center;}
 #touriners-profiles section .logo img{margin:0;padding:0;width:70%;border-radius:50%;}
+#touriners-profiles section .info{background-color:#f3f3f3;}
 #touriners-profiles .category{background-color:#272731;color:#fff;text-align:center;padding:15px 0 10px 0;}
 #touriners-profiles .category i{color:#fff;font-size:30px;}
 #touriners-profiles .category span{font-size:10px;}
 #touriners-profiles .company h5{margin:30px 0 0 0;text-align:center;}
 #touriners-profiles .company h6{margin:0;text-align:center;}
-#touriners-profiles .description{margin:0;padding:10px 10px 60px 10px;background-color:#f3f3f3;color:#272731;}
+#touriners-profiles .description{margin:0;padding:10px 10px 60px 10px;background-color:#fff;color:#272731;}
 #touriners-profiles .description p{padding:0 10px;font-size:.8em;text-align:justify;}
 #touriners-profiles footer{margin:0;padding:0;position:fixed;bottom:0;left:0;width:100%;}
 #touriner-take{background-color:#fab949;color:#272731;font-weight:bold;}
