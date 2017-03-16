@@ -23,5 +23,9 @@ var ticketsopts = {
 
 		// To add the marker to the map, call setMap();
 		marker.setMap(map);
+		
+		// Ir a la página de mapas
+		$('.page').hide();
+		$('#tickets-maps').show();
 	}
 };
