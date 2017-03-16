@@ -14,9 +14,6 @@ var app = {
 		
 		//select a tour
 		$('div.tour-opt').click(app.selectTour);
-		
-		//select a ticket
-		//$(document).on('click','#ticket-take',qrscanner.scan);
 	},
 	link:function(e){
 		e.preventDefault();
@@ -86,7 +83,7 @@ var app = {
 		$('#touriners-profiles').show();
 	},
 };
-$(app.ready);
+$(app.init);
 
 var tickets = [
 	{id: '1',promo: 'Obtén una clase grátis en horario de 07:00pm a 09:00pm el día jueves. Este ticket es válido una sola vez por usuario de la aplicación.',address: 'Calle 7 Norte No. 8, Centro Histórico',img: 'img/promo01.JPG',location:'19.047283,-98.202763',category:'1',company:'Asere & Co.'},
