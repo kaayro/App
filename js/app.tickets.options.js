@@ -5,7 +5,6 @@ var ticketsopts = {
 	map: null,
 	marker: null,
 	drawMap: function(){
-		alert();
 		if(ticketsopts.marker != null)
 			ticketsopts.marker.setMap(null);
 		loc = $('#ticket-location').attr('data');
@@ -36,6 +35,7 @@ var ticketsopts = {
 		// To add the marker to the map, call setMap();
 		ticketsopts.marker.setMap(ticketsopts.map);
 		
+		alert();
 		// Ir a la página de mapas
 		$('.page').hide();
 		$('#tickets-maps').show();
