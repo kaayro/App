@@ -1,5 +1,5 @@
 var app = {
-	server: 'http://localhost/iGitWeb/TourInDigital/Server/app/',
+	server: 'http://tourindigital.com/app/',
 	user: null,
 	history: [],
 	ready: function(fnc){
