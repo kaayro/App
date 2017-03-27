@@ -10,6 +10,7 @@ app.login = {
 		var pass = $(this).find('input').eq(1).val();
 		
 		$('section#loading').show();
+		
 		$.post(app.server+'user.php',{action:'validateUser',mail:mail,pass:pass},app.login.validatedUser);
 	},
 	validatedUser: function(data){
@@ -28,7 +29,7 @@ app.login = {
 		//llenar la página de profile y poner un loder hasta que llene
 		var profile = $('section#profile');
 		profile.find('img').attr('src','http://clipart-library.com/images/8iGbqn88T.jpg');
-		profile.find('img').ready(function(){
+		profile.find('img')[0].addEventListener('load',function(){
 			app.animations.transition('#profile','quitLeft');
 			$('section#loading').hide();
 		});
