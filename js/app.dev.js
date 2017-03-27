@@ -4,7 +4,7 @@ var app = {
 	history: [],
 	ready: function(fnc){
 		$(function(){
-			document.addEventListener('devideready',fnc,false);
+			document.addEventListener('deviceready',fnc,false);
 			//window.addEventListener('load',fnc,false);
 		});
 	},
