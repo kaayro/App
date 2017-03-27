@@ -10,7 +10,6 @@ app.login = {
 		var pass = $(this).find('input').eq(1).val();
 		
 		$('section#loading').show();
-		alert(app.server);
 		$.post(app.server+'user.php',{action:'validateUser',mail:mail,pass:pass},app.login.validatedUser);
 	},
 	validatedUser: function(data){

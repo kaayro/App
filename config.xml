@@ -29,4 +29,6 @@
 		
 		<plugin name="com.phonegap.plugins.barcodescanner" source="npm" />
 		
+		<access origin="*" />
+		
     </widget>
