@@ -10,6 +10,11 @@ section#login .options form input{font-size:1em;}
 section#login .options form button{background-color:#fab949;color:#fff;font-size:1em;}
 section#login .options a{background-color:#272731;color:#fff;}
 
+section#register form{margin:15px;}
+section#register form a{background-color:#c0c0c0;}
+section#register form button{font-size:1em;background-color:#fab949;color:#fff;}
+section#register form select{background-color:#fff;}
+
 section#profile article img{margin:15px 0 15px 0;padding:0;width:90%;}
 section#profile article div.actions h4{margin:0;}
 section#profile article div.actions h5{margin:5px;}

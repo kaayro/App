@@ -23,7 +23,7 @@
 							<input type="password" name="pass" placeholder="Contraseña" required>
 							<button type="submit" class="btn">Entrar</button>
 						</form>
-						<a href="#register" class="btn">Únete a TourIn</a>
+						<a href="#register" class="btn" data-transition="putUp">Únete a TourIn</a>
 					</div>
 				</div>
 			</section>
@@ -47,6 +47,13 @@
 								<input type="text" name="lastname" placeholder="Apellido(s)" required>
 							</label>
 							<label>
+								<span>Eres</span>
+								<select name="sex" required>
+									<option value="m">Hombre</option>
+									<option value="f">Mujer</option>
+								</select>
+							</label>
+							<label>
 								<span>Tu correo para acceder a tu cuenta</span>
 								<input type="email" name="mail" placeholder="Correo Electrónico" required>
 							</label>
@@ -62,21 +69,10 @@
 								<span>El país dónde vives</span>
 								<select name="country" required>
 									<option value="">País</option>
+									<option value="2">México</option>
 								</select>
 							</label>
-							<label>
-								<span>El estado dónde vives</span>
-								<select name="state" required>
-									<option value="">Estado</option>
-								</select>
-							</label>
-							<label>
-								<span>La ciudad dónde vives</span>
-								<select name="city" required>
-									<option value="">Ciudad</option>
-								</select>
-							</label>
-							<a href="#" id="take-photo" class="btn">Tómate una foto</a>
+							<a href="#" id="take-photo" class="btn">Tómate una foto (opcional)</a>
 							<button type="submit" class="btn">Unirme a TourIn</button>
 						</form>
 					</article>
