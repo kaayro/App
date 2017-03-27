@@ -4,8 +4,8 @@ var app = {
 	history: [],
 	ready: function(fnc){
 		$(function(){
-			//document.addEventListener('devideready',fnc,false);
-			window.addEventListener('load',fnc,false);
+			document.addEventListener('devideready',fnc,false);
+			//window.addEventListener('load',fnc,false);
 		});
 	},
 	init: function(){
