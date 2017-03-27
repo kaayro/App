@@ -16,7 +16,8 @@ app.login = {
 	validatedUser: function(data){
 		if(data != 'null'){
 			data = JSON.parse(data);
-			window.localStorage.setItem('user',data);
+			window.localStorage.setItem('user',data.id);
+			window.localStorage.setItem('userName',data.name);
 			app.login.userAccess();
 		}else{
 			alert('Correo Electrónico o Contraseña incorrectos, intenta de nuevo.');//'Correo Electrónico o Contraseña incorrectos, intenta de nuevo.','Error de autentificación',null,'Aceptar'
@@ -25,11 +26,12 @@ app.login = {
 	},
 	userAccess: function(){
 		$('section#loading').show();
-		app.user = window.localStorage.getItem('user');
+		app.user = {id:window.localStorage.getItem('user'),name:window.localStorage.getItem('userName')};
 		//llenar la página de profile y poner un loder hasta que llene
 		var profile = $('section#profile');
-		profile.find('img').attr('src','http://clipart-library.com/images/8iGbqn88T.jpg');
-		profile.find('img')[0].addEventListener('load',function(){
+		profile.find('.actions h4 span').text(app.user.name);
+		profile.find('article img').attr('src','http://tourindigital.com/app/imgs/'+app.user.id+'.jpg');
+		profile.find('article img')[0].addEventListener('load',function(){
 			app.animations.transition('#profile','quitLeft');
 			$('section#loading').hide();
 		});
