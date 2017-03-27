@@ -1,0 +1,36 @@
+/* quitLeft */
+section.page.active.quitLeft{-webkit-animation: quitLeft 0.8s;animation: quitLeft 0.8s;}
+@-webkit-keyframes quitLeft{from{left:0;}to{left:-100%;}}
+@keyframes quitLeft{from{left:0;}to{left:-100%;}}
+/* quitRight */
+section.page.active.quitRight{-webkit-animation: quitRight 0.8s;animation: quitRight 0.8s;}
+@-webkit-keyframes quitRight{from{left:0;}to{left:100%;}}
+@keyframes quitRight{from{left:0;}to{left:100%;}}
+/* quitUp */
+section.page.active.quitUp{-webkit-animation: quitUp 0.8s;animation: quitUp 0.8s;}
+@-webkit-keyframes quitUp{from{top:0;}to{top:-100%;}}
+@keyframes quitUp{from{top:0;}to{top:-100%;}}
+/* quitDown */
+section.page.active.quitDown{-webkit-animation: quitDown 0.8s;animation: quitDown 0.8s;}
+@-webkit-keyframes quitDown{from{top:0;}to{top:100%;}}
+@keyframes quitDown{from{top:0;}to{top:100%;}}
+/* putLeft */
+section.page.preactive.putLeft{-webkit-animation: putLeft 0.8s;animation: putLeft 0.8s;z-index:20;}
+section.page.active.putLeft{z-index:10;}
+@-webkit-keyframes putLeft{from{left:100%;}to{left:0;}}
+@keyframes putLeft{from{left:100%;}to{left:0;}}
+/* putRight */
+section.page.preactive.putRight{-webkit-animation: putRight 0.8s;animation: putRight 0.8s;z-index:20;}
+section.page.active.putRight{z-index:10;}
+@-webkit-keyframes putRight{from{left:-100%;}to{left:0;}}
+@keyframes putRight{from{left:-100%;}to{left:0;}}
+/* putUp */
+section.page.preactive.putUp{-webkit-animation: putUp 0.8s;animation: putUp 0.8s;z-index:20;}
+section.page.active.putUp{z-index:10;}
+@-webkit-keyframes putUp{from{top:100%;}to{top:0;}}
+@keyframes putUp{from{top:100%;}to{top:0;}}
+/* putDown */
+section.page.preactive.putDown{-webkit-animation: putDown 0.8s;animation: putDown 0.8s;z-index:20;}
+section.page.active.putDown{z-index:10;}
+@-webkit-keyframes putDown{from{top:-100%;}to{top:0;}}
+@keyframes putDown{from{top:-100%;}to{top:0;}}
