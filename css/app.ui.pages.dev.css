@@ -10,10 +10,6 @@ section#login .options form input{font-size:1em;}
 section#login .options form button{background-color:#fab949;color:#fff;font-size:1em;}
 section#login .options a{background-color:#272731;color:#fff;}
 
-section#profile header{margin:0;padding:5px 0;box-sizing:0;background-color:#272731;}
-section#profile header .logo{margin:0;padding:0;text-align:center;}
-section#profile header .logo img.miniLogo{margin:0;padding:0;width:35px;}
-section#profile article{-webkit-flex:1;flex:1;text-align:center;}
 section#profile article img{margin:15px 0 15px 0;padding:0;width:90%;}
 section#profile article div.actions h4{margin:0;}
 section#profile article div.actions h5{margin:5px;}
