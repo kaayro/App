@@ -24,11 +24,11 @@
         </author>
 		<icon src="img/isoWeb.png" />
 		
+		<access origin="*" />
+		
 		<platform name="ios" />
 		<platform name="android" />
 		
 		<plugin name="com.phonegap.plugins.barcodescanner" source="npm" />
-		
-		<access origin="*" />
 		
     </widget>
