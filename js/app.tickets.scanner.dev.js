@@ -3,12 +3,18 @@ app.tickets.scanner = {
 		$(document).on('click','#ticket footer a.use',app.tickets.scanner.scan);
 	},
 	scan: function(){
+		$('#loading').show();
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
-			  alert("We got a barcode\n" +
-					"Result: " + result.text + "\n" +
-					"Format: " + result.format + "\n" +
-					"Cancelled: " + result.cancelled);
+			  	var arr = result.text.split(',');
+				var data = {
+					action: 'getTicketCode',
+					table: arr[arr.length - 1],
+					user: app.user.id,
+					ticket: $('#ticket footer a.use').data('id'),
+				};
+				$.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);
+				
 			},
 			function (error) {
 			  alert("Scanning failed: " + error);
@@ -26,6 +32,18 @@ app.tickets.scanner = {
 				disableSuccessBeep: false // iOS 
 			}
 		);
+		/*$('#loading').show();
+		var data = {
+					action: 'getTicketCode',
+					table: 5,
+					user: app.user.id,
+					ticket: $('#ticket footer a.use').data('id')
+				};
+		$.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);*/
+	},
+	getTicketCode: function(data){
+		alert(data);
+		$('#loading').hide();
 	}
 };
 app.ready(app.tickets.scanner.init);
