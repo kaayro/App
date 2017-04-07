@@ -6,7 +6,7 @@ app.tickets.scanner = {
 		$('#loading').show();
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
-			  	var arr = result.text.split(',');
+			  	var arr = result.text.split('?');
 				var data = {
 					action: 'getTicketCode',
 					table: arr[arr.length - 1],
