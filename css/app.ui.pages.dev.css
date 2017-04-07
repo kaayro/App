@@ -15,8 +15,54 @@ section#register form a{background-color:#c0c0c0;}
 section#register form button{font-size:1em;background-color:#fab949;color:#fff;}
 section#register form select{background-color:#fff;}
 
-section#profile article img{margin:15px 0 15px 0;padding:0;width:90%;}
+section#profile article img{margin:15px 0 15px 0;padding:0;width:90%;border-radius:6px;}
 section#profile article div.actions h4{margin:0;}
 section#profile article div.actions h5{margin:5px;}
 section#profile article div.options{margin:0 15px;}
 section#profile article div.options .btn{margin:15px 0 0 0;background-color:#fab949;}
+
+section#tour-options article{box-sizing:border-box;padding:0 15px;}
+section#tour-options article .tour-types{padding:0;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;box-sizing:border-box;}
+section#tour-options article .tour-types a{margin:0;padding:15px;background-color:#272731;color:#fab949;text-decoration:none;width:50%;box-sizing:border-box;border:solid 5px #fff;border-radius:10px;}
+section#tour-options article .tour-types a i{font-size:50px;}
+section#tour-options article .tour-types a p{color:#fff;font-size:0.8em;}
+
+section#touriner header img{width:100%;}
+section#touriner article .line-up{display:flex;width:100%;background-color:#272731;color:#fff;justify-content:center;align-items:center;}
+section#touriner article .line-up a{margin:0;background-color:#fab949;text-decoration:none;color:#fff;font-size:30px;padding:15px;}
+section#touriner article .line-up #name-touriner{flex:1;}
+section#touriner article .line-up h2{margin:0;padding:15px;font-size:15px;}
+section#touriner article .line-up #nxt-touriner{border-radius:50% 0 0 50%;}
+section#touriner article .line-up #prv-touriner{border-radius:0 50% 50% 0;}
+section#touriner footer{display:flex;}
+section#touriner footer div.touriner-category{background-color:#272731;font-size:10px;display:flex;justify-content:center;align-items:center;box-sizing:border-box;padding:5px;flex:1;}
+section#touriner footer div.touriner-category i{color:#fff;font-size:4em;}
+section#touriner footer div.touriner-category p{color:#fab949;}
+section#touriner footer a{display:flex;justify-content:center;align-items:center;}
+section#touriner footer a.select{background-color:#fab949;color:#272731;}
+
+section#ticket-options article{box-sizing:border-box;padding:0 15px;}
+section#ticket-options article .tour-types{padding:0;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;box-sizing:border-box;}
+section#ticket-options article .tour-types a{margin:0;padding:15px;background-color:#fab949;color:#fff;text-decoration:none;width:50%;box-sizing:border-box;border:solid 5px #fff;border-radius:10px;}
+section#ticket-options article .tour-types a i{font-size:50px;}
+section#ticket-options article .tour-types a p{color:#272731;font-size:0.8em;}
+
+section#ticket header img{width:100%;}
+section#ticket article .line-up{display:flex;width:100%;background-color:#fab949;justify-content:center;align-items:center;}
+section#ticket article .line-up a{margin:0;background-color:#272731;text-decoration:none;color:#fff;font-size:30px;padding:15px;}
+section#ticket article .line-up #name-company{flex:1;}
+section#ticket article .line-up h2{margin:0;padding:15px;font-size:15px;}
+section#ticket article .line-up #nxt-ticket{border-radius:50% 0 0 50%;}
+section#ticket article .line-up #prv-ticket{border-radius:0 50% 50% 0;}
+section#ticket footer{display:flex;}
+section#ticket footer div.ticket-category{background-color:#fab949;font-size:10px;display:flex;justify-content:center;align-items:center;box-sizing:border-box;padding:5px;flex:1;}
+section#ticket footer div.ticket-category i{color:#fff;font-size:4em;}
+section#ticket footer div.ticket-category p{color:#272731;}
+section#ticket footer a{width:50%;display:flex;justify-content:center;align-items:center;}
+section#ticket footer a.use{background-color:#272731;color:#fab949;}
+section#ticket footer a.map{background-color:#272731;color:#fab949;box-sizing:border-box;border-left:solid 1px #fff;}
+
+section#ticket-map header{background-color:#fff;display:flex;flex-direction:row;}
+section#ticket-map header a.btn-left{position:relative;color:#fab949;}
+section#ticket-map header h4{color:#272731;font-size:10px;display:flex;justify-content:center;align-items:center;flex:1;}
+section#ticket-map article div{height:100%;}

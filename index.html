@@ -72,7 +72,6 @@
 									<option value="2">México</option>
 								</select>
 							</label>
-							<a href="#" id="take-photo" class="btn">Tómate una foto (opcional)</a>
 							<button type="submit" class="btn">Unirme a TourIn</button>
 						</form>
 					</article>
@@ -92,10 +91,143 @@
 							<h4>Hola <span class="name"></span></h4>
 							<h5>¿Cuál va a ser nuestra siguiente aventura?</h5>
 							<div class="options">
-								<a href="#" class="btn">Conocer la Ciudad</a>
-								<a href="#" class="btn">Descubrir algo por hacer</a>
+								<a href="#tour-options" class="btn">Conocer la Ciudad</a>
+								<a href="#ticket-options" class="btn">Descubrir algo por hacer</a>
 							</div>
 						</div>
+					</article>
+				</div>
+			</section>
+			
+			<section class="page" id="tour-options">
+				<div class="col">
+					<header>
+						<div class="logo">
+							<img src="img/isoWebTransparent.png" class="miniLogo">
+						</div>
+						<a href="#" data-rel="back" class="btn-left"><</a>
+					</header>
+					<article>
+						<h2>¿Cómo quieres conocer la ciudad?</h2>
+						<div class="tour-types">
+							<a href="#" data-cat="food">
+								<i class="fa-food">a</i>
+								<p>Sabores de la Ciudad</p>
+							</a>
+							<a href="#" data-cat="picture">
+								<i class="fa-camera">b</i>
+								<p>Postales de la Ciudad</p>
+							</a>
+							<a href="#" data-cat="sales">
+								<i class="fa-basket">c</i>
+								<p>Recuerdos de la Ciudad</p>
+							</a>
+							<a href="#touriner" data-cat="all">
+								<i class="fa-all">d</i>
+								<p>Todos</p>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+				
+			<section class="page" id="touriner">
+				<div class="col">
+					<header>
+						<div class="head">
+							<a href="#" data-rel="back" class="btn-left"><</a>
+							<a href="#tour-options" class="btn-right">-</a>
+							<img src="https://expertbeacon.com/sites/default/files/advice_for_men_on_selecting_your_online_dating_profile_photo.jpg">
+						</div>
+					</header>
+					<article>
+						<div class="line-up">
+							<a href="#" id="prv-touriner"><i class="fa-left"><</i></a>
+							<div id="name-touriner"><h2>Nombre</h2></div>
+							<a href="#" id="nxt-touriner"><i class="fa-right">></i></a>
+						</div>
+					</article>
+					<footer>
+						<div class="touriner-category">
+							<i class="fa-activities">m</i>
+							<p>Actividades y Entretenimiento</p>
+						</div>
+						<a href="#" class="btn select">Tomar</a>
+					</footer>
+				</div>
+			</section>
+					
+			<section class="page" id="ticket-options">
+				<div class="col">
+					<header>
+						<div class="logo">
+							<img src="img/isoWebTransparent.png" class="miniLogo">
+						</div>
+						<a href="#" data-rel="back" class="btn-left"><</a>
+					</header>
+					<article>
+						<h2>¿Qué prefieres descubrir por hacer?</h2>
+						<div class="tour-types">
+							<a href="#" data-cat="1">
+								<i class="fa-activities">a</i>
+								<p>Actividades y Entretenimiento</p>
+							</a>
+							<a href="#" data-cat="2">
+								<i class="fa-hotels">c</i>
+								<p>Hoteles y Restaurantes</p>
+							</a>
+							<a href="#" data-cat="3">
+								<i class="fa-shops">b</i>
+								<p>Tiendas y Artesanías</p>
+							</a>
+							<a href="#" data-cat="all">
+								<i class="fa-all">d</i>
+								<p>Todo</p>
+							</a>
+						</div>
+					</article>
+				</div>
+			</section>
+				
+			<section class="page" id="ticket">
+				<div class="col">
+					<header>
+						<div class="head">
+							<a href="#" data-rel="back" class="btn-left"><</a>
+							<a href="#ticket-options" class="btn-right" data-transition="putDown">-</a>
+							<img src="http://www.swagger.mx/media/bi/styles/xlarge/public/images/2016/09/curiosidades-comida-mexicana-1.jpg">
+						</div>
+					</header>
+					<article>
+						<div class="line-up">
+							
+							<a href="#" id="prv-ticket"><i class="fa-left"><</i></a>
+							<div id="name-company"><h2>Nombre</h2></div>
+							<a href="#" id="nxt-ticket"><i class="fa-right">></i></a>
+						</div>
+						<div class="description">
+							<p>Breve descripción</p>
+						</div>
+					</article>
+					<footer>
+						<div class="ticket-category">
+							<i class="fa-activities">m</i>
+							<p>Actividades y Entretenimiento</p>
+						</div>
+						<a href="#" class="btn use">Tomar</a>
+						<a href="#" class="btn map">Ubicación</a>
+					</footer>
+				</div>
+			</section>
+			
+			<section class="page" id="ticket-map">
+				<div class="col">
+					<header>
+						<a href="#" data-rel="back" class="btn-left"><</a>
+						<h4>Dirección</h4>
+					</header>
+					<article>
+						<div id="map"></div>
 					</article>
 				</div>
 			</section>
@@ -108,9 +240,13 @@
 		</div>
 		
 		<script src="cordova.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa0phGDjBLZU7dv-4eekqgAe1c0FLkMMk	&callback=app.tickets.map.showMaps"></script>
 		<script src="js/zepto.min.js"></script>
 		<script src="js/app.dev.js"></script>
 		<script src="js/app.login.dev.js"></script>
 		<script src="js/app.animations.dev.js"></script>
+		<script src="js/app.tickets.dev.js"></script>
+		<script src="js/app.tickets.map.dev.js"></script>
+		<script src="js/app.tickets.scanner.dev.js"></script>
 	</body>
 </html>

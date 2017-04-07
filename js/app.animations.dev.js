@@ -33,6 +33,8 @@ app.animations = {
 			case 'putRight':result='quitLeft';break;
 			case 'putUp':result='quitDown';break;
 			case 'putDown':result='quitUp';break;
+			case 'nextPage':result='prevPage';break;
+			case 'prevPage':result='nextPage';break;
 		}
 		
 		return result;

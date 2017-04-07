@@ -39,3 +39,12 @@ section.page.active.putDown{z-index:10;}
 section.page.active.fade{-webkit-animation: fade 0.3s;animation: fade 0.3s;}
 @-webkit-keyframes fade{from{opacity:1;}to{opacity:0;}}
 @keyframes fade{from{opacity:1;}to{opacity:0;}}
+
+/* nextPage */
+section.page.active.nextPage{-webkit-animation: nextPage 0.8s;animation: nextPage 0.8s;}
+@-webkit-keyframes nextPage{0%{transform:rotate(0) scale(1,1);transform-origin:center;}8%{transform:rotate(0) scale(0.8,0.8);transform-origin:center;}9%{transform:rotate(0) scale(0.8,0.8) translate(0,0);transform-origin:center;}100%{transform:rotate(90deg) scale(0.8,0.8) translate(200%,-100%);transform-origin:center;}}
+@keyframes nextPage{0%{transform:rotate(0) scale(1,1);transform-origin:center;}8%{transform:rotate(0) scale(0.8,0.8);transform-origin:center;}9%{transform:rotate(0) scale(0.8,0.8) translate(0,0);transform-origin:center;}100%{transform:rotate(90deg) scale(0.8,0.8) translate(200%,-100%);transform-origin:center;}}
+/* prevPage */
+section.page.active.prevPage{-webkit-animation: prevPage 0.8s;animation: prevPage 0.8s;}
+@-webkit-keyframes prevPage{0%{transform:rotate(0) scale(1,1);transform-origin:center;}8%{transform:rotate(0) scale(0.8,0.8);transform-origin:center;}9%{transform:rotate(0) scale(0.8,0.8) translate(0,0);transform-origin:center;}100%{transform:rotate(-90deg) scale(0.8,0.8) translate(-200%,-100%);transform-origin:center;}}
+@keyframes prevPage{0%{transform:rotate(0) scale(1,1);transform-origin:center;}8%{transform:rotate(0) scale(0.8,0.8);transform-origin:center;}9%{transform:rotate(0) scale(0.8,0.8) translate(0,0);transform-origin:center;}100%{transform:rotate(-90deg) scale(0.8,0.8) translate(-200%,-100%);transform-origin:center;}}

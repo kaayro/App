@@ -1,5 +1,5 @@
 var app = {
-	server: 'http://tourindigital.com/app/',
+	server: 'http://localhost/iGitWeb/TourInDigital/Server/app/',
 	user: null,
 	history: [],
 	ready: function(fnc){
@@ -10,17 +10,20 @@ var app = {
 	},
 	init: function(){
 		$(document).on('click','a',app.link);
-		$(document).on('click','a[data-rel=back]',app.linkBack)
 	},
 	link: function(e){
 		e.preventDefault();
-		var href = $(this).attr('href');
-		var animation = $(this).data('transition');
-		var currentPage = $('section.page.active').attr('id');
-		
-		if(href != '' && href != undefined && href != '#'){
-			app.history.push({page:'#'+currentPage,transition:animation});
-			app.animations.transition(href,animation);
+		if($(this).data('rel') == 'back'){
+			app.linkBack();
+		}else{
+			var href = $(this).attr('href');
+			var animation = $(this).data('transition');
+			var currentPage = $('section.page.active').attr('id');
+
+			if(href != '' && href != undefined && href != '#' && $(href).length > 0){
+				app.history.push({page:'#'+currentPage,transition:animation});
+				app.animations.transition(href,animation);
+			}
 		}
 	},
 	linkBack: function(){
@@ -31,6 +34,7 @@ var app = {
 		if(anim == undefined) anim = 'fade';
 		
 		app.animations.transition(page,app.animations.transitionReverse(anim));
+		app.history.pop();
 	}
 	
 };
