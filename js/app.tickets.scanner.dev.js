@@ -32,17 +32,17 @@ app.tickets.scanner = {
 				disableSuccessBeep: false // iOS 
 			}
 		);
-		/*$('#loading').show();
-		var data = {
-					action: 'getTicketCode',
-					table: 5,
-					user: app.user.id,
-					ticket: $('#ticket footer a.use').data('id')
-				};
-		$.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);*/
 	},
 	getTicketCode: function(data){
-		alert(data);
+		if(data != '0'){
+            var place = $('#name-company').text();
+            var description = $('#ticket .description').text();
+            var code = data;
+            $('#ticket-confirm header h4').text(place);
+            $('#ticket-confirm .like-promo p').text(place);
+            $('#ticket-confirm .like-promo h3').text(place);
+        }else
+            alert("Error al escanear el código, intenta de nuevo");
 		$('#loading').hide();
 	}
 };
