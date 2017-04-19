@@ -74,7 +74,7 @@ app.tickets = {
 		$('#loading').hide();
 		if($('section.page.active').attr('id') == 'ticket-options')
 			app.animations.transition('#ticket','quitUp');
-	}
+	},
     confirm: function(){
         $('#loading').show();
         var like = 2;
