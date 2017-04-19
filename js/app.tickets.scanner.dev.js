@@ -41,9 +41,12 @@ app.tickets.scanner = {
             $('#ticket-confirm header h4').text(place);
             $('#ticket-confirm .like-promo p').text(place);
             $('#ticket-confirm .like-promo h3').text(place);
-        }else
+            $('#loading').hide();
+            app.animations.transition('#ticket-confirm','putLeft');
+        }else{
             alert("Error al escanear el código, intenta de nuevo");
-		$('#loading').hide();
+            $('#loading').hide();
+        }
 	}
 };
 app.ready(app.tickets.scanner.init);

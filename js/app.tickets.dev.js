@@ -40,7 +40,7 @@ app.tickets = {
 			app.tickets.i = i;
 			ticket = app.tickets.tickets[i];
 			
-			$('#ticket header img').attr('src','http://identidadgeek.com/wp-content/uploads/2014/12/mexicana.jpg');//app.server+'companies/'+ticket.companyId+'/'+ticket.ticketPicture);
+			$('#ticket header img').attr('src',app.server+'companies/'+ticket.companyId+'/'+ticket.ticketPicture);//'http://identidadgeek.com/wp-content/uploads/2014/12/mexicana.jpg');
 			$('#ticket header img')[0].addEventListener('load',function(){
 				$('#name-company h2').text(ticket.companyName);
 				$('#ticket .description p').text(ticket.ticketDeal);
