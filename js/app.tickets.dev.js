@@ -5,7 +5,7 @@ app.tickets = {
 		$(document).on('click','#ticket-options .tour-types a',app.tickets.getTickets);
 		$(document).on('click','#nxt-ticket',app.tickets.nextTicket);
 		$(document).on('click','#prv-ticket',app.tickets.prevTicket);
-        $(document).on('click','#ticket-confirm a.like',);
+        $(document).on('click','#ticket-confirm a.like',app.tickets.confirm);
 	},
 	getTickets: function(){
 		$('#loading').show();
