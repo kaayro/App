@@ -5,6 +5,7 @@ app.tickets = {
 		$(document).on('click','#ticket-options .tour-types a',app.tickets.getTickets);
 		$(document).on('click','#nxt-ticket',app.tickets.nextTicket);
 		$(document).on('click','#prv-ticket',app.tickets.prevTicket);
+        $(document).on('click','#ticket-confirm a.like',);
 	},
 	getTickets: function(){
 		$('#loading').show();
@@ -74,5 +75,21 @@ app.tickets = {
 		if($('section.page.active').attr('id') == 'ticket-options')
 			app.animations.transition('#ticket','quitUp');
 	}
+    confirm: function(){
+        $('#loading').show();
+        var like = 2;
+        if($(this).hasClass('like')) like = 1;
+        var data = {
+            action: 'ticketConfirm',
+            user: app.user.id,
+            ticket: $('#ticket-confirm .like-promo h3').text(),
+            opinion: like
+        };
+        $.post(app.server+'tickets.php',data,function(msg){
+            $('#loading').hide();
+            if(msg == 0) alert("Hubo un error al enviar la confirmación, intenta de nuevo.");
+            else app.animations.transition('#profile','quitRight');
+        });
+    }
 };
 app.ready(app.tickets.init);
