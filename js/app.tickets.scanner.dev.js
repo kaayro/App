@@ -39,8 +39,8 @@ app.tickets.scanner = {
             var description = $('#ticket .description').text();
             var code = data;
             $('#ticket-confirm header h4').text(place);
-            $('#ticket-confirm .like-promo p').text(place);
-            $('#ticket-confirm .like-promo h3').text(place);
+            $('#ticket-confirm .like-promo p').text(description);
+            $('#ticket-confirm .like-promo h3').text(code);
             $('#loading').hide();
             app.animations.transition('#ticket-confirm','putLeft');
         }else{

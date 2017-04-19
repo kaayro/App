@@ -66,3 +66,7 @@ section#ticket-map header{background-color:#fff;display:flex;flex-direction:row;
 section#ticket-map header a.btn-left{position:relative;color:#fab949;}
 section#ticket-map header h4{color:#272731;font-size:10px;display:flex;justify-content:center;align-items:center;flex:1;}
 section#ticket-map article div{height:100%;}
+
+section#ticket-confirm header h4{text-align:center;color:#fab949;text-transform:uppercase;}
+section#ticket-confirm .likes a.like{background-color:#fab949;color:#fff;}
+section#ticket-confirm .likes a.deslike{background-color:#272731;color:#fff;}
