@@ -11,6 +11,7 @@ var app = {
 	},
 	init: function(){
 		$(document).on('click','a',app.link);
+        $(document).on('click','a#session-close',app.sessionClose);
 	},
 	link: function(e){
 		e.preventDefault();
@@ -36,7 +37,10 @@ var app = {
 		
 		app.animations.transition(page,app.animations.transitionReverse(anim));
 		app.history.pop();
-	}
-	
+	},
+	sessionClose: function(){
+        window.localStorage.clear();
+        app.animations.transition('#login','putRight')
+    }
 };
 app.ready(app.init);
