@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <title>TourIn &beta;1.0</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href="css/app.dev.css" rel="stylesheet" type="text/css">
 		<link href="css/app.ui.pages.dev.css" rel="stylesheet" type="text/css">
 		<link href="css/app.ui.animations.dev.css" rel="stylesheet" type="text/css">
@@ -34,7 +35,7 @@
 						<div class="logo">
 							<img src="img/isoWebTransparent.png" class="miniLogo">
 						</div>
-						<a href="#" data-rel="back" class="btn-left"><</a>
+						<a href="#" data-rel="back" class="btn-left"><i class="fa-back"></i></a>
 					</header>
 					<article>
 						<form id="register-form">
@@ -93,6 +94,7 @@
 							<div class="options">
 								<a href="#ticket-options" class="btn">Descubrir algo por hacer</a>
 							</div>
+                            <a href="#" id="session-close">Cerrar Sesión</a>
 						</div>
 					</article>
 				</div>
@@ -104,7 +106,7 @@
 						<div class="logo">
 							<img src="img/isoWebTransparent.png" class="miniLogo">
 						</div>
-						<a href="#" data-rel="back" class="btn-left"><</a>
+						<a href="#" data-rel="back" class="btn-left"><i class="fa-back"></i></a>
 					</header>
 					<article>
 						<h2>¿Qué prefieres descubrir por hacer?</h2>
@@ -134,17 +136,17 @@
 				<div class="col">
 					<header>
 						<div class="head">
-							<a href="#" data-rel="back" class="btn-left"><</a>
-							<a href="#ticket-options" class="btn-right" data-transition="putDown">-</a>
+							<a href="#" data-rel="back" class="btn-left"><i class="fa-back"></i></a>
+							<a href="#ticket-options" class="btn-right" data-transition="putDown"><i class="fa-menu"></i></a>
 							<img src="http://www.swagger.mx/media/bi/styles/xlarge/public/images/2016/09/curiosidades-comida-mexicana-1.jpg">
 						</div>
 					</header>
 					<article>
 						<div class="line-up">
 							
-							<a href="#" id="prv-ticket"><i class="fa-left"><</i></a>
+							<a href="#" id="prv-ticket"><i class="fa-prev"></i></a>
 							<div id="name-company"><h2>Nombre</h2></div>
-							<a href="#" id="nxt-ticket"><i class="fa-right">></i></a>
+							<a href="#" id="nxt-ticket"><i class="fa-next"></i></a>
 						</div>
 						<div class="description">
 							<p>Breve descripción</p>
@@ -152,11 +154,11 @@
 					</article>
 					<footer>
 						<div class="ticket-category">
-							<i class="fa-activities">m</i>
+							<i class="fa-activities"></i>
 							<p>Actividades y Entretenimiento</p>
 						</div>
-						<a href="#" class="btn use">Tomar</a>
-						<a href="#" class="btn map">Ubicación</a>
+						<a href="#" class="btn use"><i class="fa-qr-code"></i> Tomar</a>
+						<a href="#" class="btn map"><i class="fa-map"></i> Ubicación</a>
 					</footer>
 				</div>
 			</section>
@@ -164,7 +166,7 @@
 			<section class="page" id="ticket-map">
 				<div class="col">
 					<header>
-						<a href="#" data-rel="back" class="btn-left"><</a>
+						<a href="#" data-rel="back" class="btn-left"><i class="fa-back"></i></a>
 						<h4>Dirección</h4>
 					</header>
 					<article>
@@ -185,7 +187,7 @@
                             <h3>Código</h3>
                             <div class="likes">
                                 <a href="#" class="btn like"><i class="fa-like"></i> Sí me lo dieron</a>
-                                <a href="#" class="btn deslike"><i class="fa-deslike"></i> No me lo dieron</a>
+                                <a href="#" class="btn deslike"><i class="fa-dislike"></i> No me lo dieron</a>
                             </div>
                         </div>
 					</article>
