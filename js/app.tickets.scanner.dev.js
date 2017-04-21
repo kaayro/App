@@ -6,15 +6,16 @@ app.tickets.scanner = {
 		$('#loading').show();
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
-                alert(result.cancelled);
-			  	var arr = result.text.split('?');
-				var data = {
-					action: 'getTicketCode',
-					table: arr[arr.length - 1],
-					user: app.user.id,
-					ticket: $('#ticket footer a.use').data('id'),
-				};
-				$.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);
+                if(!result.cancelled){
+                    var arr = result.text.split('?');
+                    var data = {
+                        action: 'getTicketCode',
+                        table: arr[arr.length - 1],
+                        user: app.user.id,
+                        ticket: $('#ticket footer a.use').data('id'),
+                    };
+				    $.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);
+                }
 				
 			},
 			function (error) {
