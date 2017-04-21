@@ -2,7 +2,6 @@ section#loading{background-color:rgba(0,0,0,0.6);z-index:40;display:none;}
 section#loading div.col{align-items:center;justify-content:center;}
 section#loading img{width:100px;}
 
-section#login{height:100%;}
 section#login .logo{margin:0;padding:0;flex:1;-webkit-flex:1;background-color:#272731;text-align:center;box-sizing:border-box;}
 section#login .logo img{margin:0;padding:0;}
 section#login .options{margin:0;padding:0;box-sizing:border-box;background-color:#272731;position:absolute;bottom:0;width:100%;}
