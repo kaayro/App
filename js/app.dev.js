@@ -5,13 +5,14 @@ var app = {
 	history: [],
 	ready: function(fnc){
 		$(function(){
-			//document.addEventListener('deviceready',fnc,false);
-			window.addEventListener('load',fnc,false);
+			document.addEventListener('deviceready',fnc,false);
+			//window.addEventListener('load',fnc,false);
 		});
 	},
 	init: function(){
 		$(document).on('click','a',app.link);
         $(document).on('click','a#session-close',app.sessionClose);
+        app.availableYears();
 	},
 	link: function(e){
 		e.preventDefault();
@@ -41,6 +42,13 @@ var app = {
 	sessionClose: function(){
         window.localStorage.clear();
         app.animations.transition('#login','putRight')
+    },
+    availableYears: function(){
+        var now = 2017;
+        var f = now - 18;
+        for(i = f;i > (f - 99); i--){
+            $('#bdate select.year').append('<option value="'+i+'">'+i+'</value>');
+        }
     }
 };
 app.ready(app.init);
