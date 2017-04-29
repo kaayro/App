@@ -64,7 +64,11 @@
 							</label>
 							<label>
 								<span>La fecha en que naciste</span>
-								<input type="date" name="bdate" required>
+                                <div id="bdate">
+                                    <select class="day" required><option value="">Día</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+                                    <select class="month" required><option value="">Mes</option><option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option></select>
+                                    <select class="year" required><option value="">Año</option></select>
+                                </div>
 							</label>
 							<label>
 								<span>El país dónde vives</span>
@@ -109,7 +113,7 @@
 						<a href="#" data-rel="back" class="btn-left"><i class="fa-back"></i></a>
 					</header>
 					<article>
-						<h2>¿Qué prefieres descubrir por hacer?</h2>
+						<h2>¡Descubre algo para ti!</h2>
 						<div class="tour-types">
 							<a href="#" data-cat="1">
 								<i class="fa-activity"></i>

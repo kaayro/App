@@ -15,8 +15,7 @@ app.tickets.scanner = {
                         ticket: $('#ticket footer a.use').data('id'),
                     };
 				    $.post(app.server+'tickets.php',data,app.tickets.scanner.getTicketCode);
-                }
-				
+                }else $('#loading').hide();
 			},
 			function (error) {
 			  alert("Scanning failed: " + error);

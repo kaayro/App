@@ -26,6 +26,7 @@ app.tickets = {
 			data = JSON.parse(data);
 			if(data.length > 0){
 				app.tickets.tickets = data;
+                app.tickets.i = 0;
 				app.tickets.viewTicket(app.tickets.i,app.tickets.changePage);
 			}else{
 				alert('No tenemos tickets para esta categoría en esta ciudad, por favor contactanos a info@tourindigital.com');

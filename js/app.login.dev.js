@@ -49,6 +49,7 @@ app.login = {
 		
 		$('section#loading').show();
 		var form = $(this);
+        var bdate = $('div#bdate');
 		var data = {
 			action: 'userRegister',
 			name: form.find('input').eq(0).val(),
@@ -56,7 +57,7 @@ app.login = {
 			sex: form.find('select').eq(0).val(),
 			mail: form.find('input').eq(2).val(),
 			pass: form.find('input').eq(3).val(),
-			bdate: form.find('input').eq(4).val(),
+			bdate: bdate.find('.year').val()+'-'+bdate.find('.month').val()+'-'+bdate.find('.day').val(),
 			country: form.find('select').eq(1).val(),
 			location: 'latitud y longitud'
 		}

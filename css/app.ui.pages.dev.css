@@ -5,7 +5,7 @@ section#loading img{width:100px;}
 section#login{height:100% !important;}
 section#login .logo{margin:0;padding:0;flex:1;-webkit-flex:1;background-color:#272731;text-align:center;box-sizing:border-box;}
 section#login .logo img{margin:0;padding:0;}
-section#login .options{margin:0;padding:0;box-sizing:border-box;background-color:#272731;position:absolute;bottom:0;width:100%;}
+section#login .options{margin:0;padding:0;box-sizing:border-box;background-color:#272731;position:fixed;bottom:0;width:100%;}
 section#login .options form{margin:0;padding:0;box-sizing:border-box;}
 section#login .options form input{font-size:1em;}
 section#login .options form button{background-color:#fab949;color:#fff;font-size:1em;}
@@ -15,12 +15,13 @@ section#register form{margin:15px;}
 section#register form a{background-color:#c0c0c0;}
 section#register form button{font-size:1em;background-color:#fab949;color:#fff;}
 section#register form select{background-color:#fff;}
+section#register form div#bdate{display:flex;flex-direction:row;}
 
 section#profile article img{margin:15px 0 15px 0;padding:0;width:90%;border-radius:6px;}
 section#profile article div.actions h4{margin:0;}
 section#profile article div.actions h5{margin:5px;}
 section#profile article div.options{margin:0 15px;}
-section#profile article div.options .btn{margin:15px 0 0 0;background-color:#fab949;}
+section#profile article div.options .btn{margin:15px 0 25px 0;background-color:#fab949;}
 
 section#tour-options article{box-sizing:border-box;padding:0 15px;}
 section#tour-options article .tour-types{padding:0;display:flex;flex-direction:row;flex-wrap:wrap;width:100%;box-sizing:border-box;}
