@@ -43,7 +43,7 @@ app.tickets = {
 			app.tickets.i = i;
 			ticket = app.tickets.tickets[i];
 			
-			$('#ticket header img').attr('src','http://tourindigital.com/partners2_0/modules/tickets/image.php?id='+ticket.ticketId);//'http://identidadgeek.com/wp-content/uploads/2014/12/mexicana.jpg');
+			$('#ticket header img').attr('src','http://tourindigital.com/partners/modules/tickets/image.php?id='+ticket.ticketId);//'http://identidadgeek.com/wp-content/uploads/2014/12/mexicana.jpg');
 			$('#ticket header img')[0].addEventListener('load',function(){
 				$('#name-company h2').text(ticket.companyName);
 				$('#ticket .description p').text(ticket.ticketDeal);
